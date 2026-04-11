@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Recipes - Cooking-Star</title>
+</head>
+<body>
+
+    <!-- Admin Navigation Bar -->
+    <div>
+        <img src="logo.jpg" alt="logo" height="100" width="100">
+        <a href="admin.html">Home</a>
+        <span>|</span>
+        <a href="add_recipe.html">Add Recipe</a>
+        <span>|</span>
+        <a href="manage-recipes.html">Manage Recipes</a>
+        <span>|</span>
+        <a href="login.html">Logout</a>
+    </div>
+    <hr>
+
+    <h2>Manage Recipes</h2>
+    <p>Select a recipe to edit its details or delete it.</p>
+
+    <!-- RECIPES TABLE -->
+    <table border="1" width="100%">
+        <tr>
+            <th>Recipe Name</th>
+            <th>Course Type</th>
+            <th>Image</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td>Grilled Chicken</td>
+            <td>Main Course</td>
+            <td align="center"><img src="grilled_chicken.jpg" alt="grilled_chicken" width="100"></td>
+            <td align="center">
+                <a href="#edit-grilled-chicken"><button>Edit</button></a>
+                <a href="#delete-grilled-chicken"><button>Delete</button></a>
+            </td>
+        </tr>
+        <tr>
+            <td>Spaghetti Bolognese</td>
+            <td>Main Course</td>
+            <td align="center"><img src="spaghetti_bolognese.jpg" alt="spaghetti_bolognese" width="100"></td>
+            <td align="center">
+                <a href="#edit-spaghetti-bolognese"><button>Edit</button></a>
+                <a href="#delete-spaghetti-bolognese"><button>Delete</button></a>
+            </td>
+        </tr>
+        <tr>
+            <td>Caesar Salad</td>
+            <td>Appetizer</td>
+            <td align="center"><img src="caeser_salad.jpg" alt="caeser_salad" width="100"></td>
+            <td align="center">
+                <a href="#edit-caesar-salad"><button>Edit</button></a>
+                <a href="#delete-caesar-salad"><button>Delete</button></a>
+            </td>
+        </tr>
+        <tr>
+            <td>Chicken Alfredo Pasta</td>
+            <td>Main Course</td>
+            <td align="center"><img src="alfredo_pasta.jpg" alt="alfredo_pasta" width="100"></td>
+            <td align="center">
+                <a href="#edit-alfredo-pasta"><button>Edit</button></a>
+                <a href="#delete-alfredo-pasta"><button>Delete</button></a>
+            </td>
+        </tr>
+        <tr>
+            <td>Chocolate Lava Cake</td>
+            <td>Dessert</td>
+            <td align="center"><img src="lava_cake.jpg" alt="lava_cake" width="100"></td>
+            <td align="center">
+                <a href="#edit-lava-cake"><button>Edit</button></a>
+                <a href="#delete-lava-cake"><button>Delete</button></a>
+            </td>
+        </tr>
+        <tr>
+            <td>Sambosa</td>
+            <td>Appetizer</td>
+            <td align="center"><img src="sambosa.jpg" alt="sambosa" width="100"></td>
+            <td align="center">
+                <a href="#edit-sambosa"><button>Edit</button></a>
+                <a href="#delete-sambosa"><button>Delete</button></a>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <hr>
+
+    <!-- ============ EDIT SECTIONS ============ -->
+
+    <h2>Edit Recipe</h2>
+
+    <!-- Edit Grilled Chicken -->
+    <h3 id="edit-grilled-chicken">Edit: Grilled Chicken</h3>
+    <form action="manage-recipes.html">
+        <label for="name1">Recipe Name:</label><br>
+        <input type="text" id="name1" name="recipeName" value="Grilled Chicken" required><br><br>
+
+        <label for="course1">Course Type:</label><br>
+        <select id="course1" name="course">
+            <option value="appetizers">Appetizers</option>
+            <option value="main" selected>Main Course</option>
+            <option value="dessert">Dessert</option>
+        </select><br><br>
+
+        <label>Average Cooking Time (minutes):</label><br>
+        <input type="number" name="time" value="30"><br><br>
+
+        <label>Difficulty Level (1 = Easy, 5 = Hard):</label><br>
+        <input type="range" name="difficulty" min="1" max="5" value="2"><br><br>
+
+        <label>Current Image:</label><br>
+        <img src="grilled_chicken.jpg" alt="grilled_chicken" width="100"><br><br>
+
+        <label>Change Image:</label><br>
+        <input type="file" name="recipeImage"><br><br>
+
+        <label>Ingredient 1:</label><br>
+        <input type="text" name="ingredient1" value="Chicken Breast"><br><br>
+        <label>Quantity:</label><br>
+        <input type="text" name="quantity1" value="500g"><br><br>
+
+        <label>Ingredient 2:</label><br>
+        <input type="text" name="ingredient2" value="Olive Oil"><br><br>
+        <label>Quantity:</label><br>
+        <input type="text" name="quantity2" value="3 tbsp"><br><br>
+
+        <label>Preparation Instructions:</label><br>
+        <textarea name="instructions" rows="4" cols="50">Marinate chicken and grill for 6-7 minutes each side.</textarea><br><br>
+
+        <label>Common Mistakes:</label><br>
+        <textarea name="mistakes" rows="3" cols="50">Do not skip the marinating step.</textarea><br><br>
+
+        <input type="submit" value="Update Recipe">
+        <input type="reset" value="Reset Changes">
+    </form>
+
+    <hr>
+
+    <!-- Edit Spaghetti Bolognese -->
+    <h3 id="edit-spaghetti-bolognese">Edit: Spaghetti Bolognese</h3>
+    <form action="manage-recipes.html">
+        <label for="name2">Recipe Name:</label><br>
+        <input type="text" id="name2" name="recipeName" value="Spaghetti Bolognese" required><br><br>
+
+        <label for="course2">Course Type:</label><br>
+        <select id="course2" name="course">
+            <option value="appetizers">Appetizers</option>
+            <option value="main" selected>Main Course</option>
+            <option value="dessert">Dessert</option>
+        </select><br><br>
+
+        <label>Average Cooking Time (minutes):</label><br>
+        <input type="number" name="time" value="40"><br><br>
+
+        <label>Difficulty Level (1 = Easy, 5 = Hard):</label><br>
+        <input type="range" name="difficulty" min="1" max="5" value="2"><br><br>
+
+        <label>Current Image:</label><br>
+        <img src="spaghetti_bolognese.jpg" alt="spaghetti_bolognese" width="100"><br><br>
+
+        <label>Change Image:</label><br>
+        <input type="file" name="recipeImage"><br><br>
+
+        <label>Ingredient 1:</label><br>
+        <input type="text" name="ingredient1" value="Spaghetti"><br><br>
+        <label>Quantity:</label><br>
+        <input type="text" name="quantity1" value="400g"><br><br>
+
+        <label>Ingredient 2:</label><br>
+        <input type="text" name="ingredient2" value="Ground Beef"><br><br>
+        <label>Quantity:</label><br>
+        <input type="text" name="quantity2" value="300g"><br><br>
+
+        <label>Preparation Instructions:</label><br>
+        <textarea name="instructions" rows="4" cols="50">Cook beef with onion and garlic, add tomato sauce, simmer 20 min. Serve over spaghetti.</textarea><br><br>
+
+        <label>Common Mistakes:</label><br>
+        <textarea name="mistakes" rows="3" cols="50">Do not overcook the pasta.</textarea><br><br>
+
+        <input type="submit" value="Update Recipe">
+        <input type="reset" value="Reset Changes">
+    </form>
+
+    <hr>
+
+    <!-- Edit Caesar Salad -->
+    <h3 id="edit-caesar-salad">Edit: Caesar Salad</h3>
+    <form action="manage-recipes.html">
+        <label for="name3">Recipe Name:</label><br>
+        <input type="text" id="name3" name="recipeName" value="Caesar Salad" required><br><br>
+
+        <label for="course3">Course Type:</label><br>
+        <select id="course3" name="course">
+            <option value="appetizers" selected>Appetizers</option>
+            <option value="main">Main Course</option>
+            <option value="dessert">Dessert</option>
+        </select><br><br>
+
+        <label>Average Cooking Time (minutes):</label><br>
+        <input type="number" name="time" value="10"><br><br>
+
+        <label>Difficulty Level (1 = Easy, 5 = Hard):</label><br>
+        <input type="range" name="difficulty" min="1" max="5" value="1"><br><br>
+
+        <label>Current Image:</label><br>
+        <img src="caeser_salad.jpg" alt="caeser_salad" width="100"><br><br>
+
+        <label>Change Image:</label><br>
+        <input type="file" name="recipeImage"><br><br>
+
+        <label>Ingredient 1:</label><br>
+        <input type="text" name="ingredient1" value="Romaine Lettuce"><br><br>
+        <label>Quantity:</label><br>
+        <input type="text" name="quantity1" value="1 head"><br><br>
+
+        <label>Ingredient 2:</label><br>
+        <input type="text" name="ingredient2" value="Caesar Dressing"><br><br>
+        <label>Quantity:</label><br>
+        <input type="text" name="quantity2" value="4 tbsp"><br><br>
+
+        <label>Preparation Instructions:</label><br>
+        <textarea name="instructions" rows="4" cols="50">Toss lettuce with dressing, top with croutons and parmesan.</textarea><br><br>
+
+        <label>Common Mistakes:</label><br>
+        <textarea name="mistakes" rows="3" cols="50">Do not overdress the salad.</textarea><br><br>
+
+        <input type="submit" value="Update Recipe">
+        <input type="reset" value="Reset Changes">
+    </form>
+
+    <hr>
+
+    <!-- Edit Chicken Alfredo Pasta -->
+    <h3 id="edit-alfredo-pasta">Edit: Chicken Alfredo Pasta</h3>
+    <form action="manage-recipes.html">
+        <label for="name4">Recipe Name:</label><br>
+        <input type="text" id="name4" name="recipeName" value="Chicken Alfredo Pasta" required><br><br>
+
+        <label for="course4">Course Type:</label><br>
+        <select id="course4" name="course">
+            <option value="appetizers">Appetizers</option>
+            <option value="main" selected>Main Course</option>
+            <option value="dessert">Dessert</option>
+        </select><br><br>
+
+        <label>Average Cooking Time (minutes):</label><br>
+        <input type="number" name="time" value="35"><br><br>
+
+        <label>Difficulty Level (1 = Easy, 5 = Hard):</label><br>
+        <input type="range" name="difficulty" min="1" max="5" value="3"><br><br>
+
+        <label>Current Image:</label><br>
+        <img src="alfredo_pasta.jpg" alt="alfredo_pasta" width="100"><br><br>
+
+        <label>Change Image:</label><br>
+        <input type="file" name="recipeImage"><br><br>
+
+        <label>Ingredient 1:</label><br>
+        <input type="text" name="ingredient1" value="Fettuccine Pasta"><br><br>
+        <label>Quantity:</label><br>
+        <input type="text" name="quantity1" value="400g"><br><br>
+
+        <label>Ingredient 2:</label><br>
+        <input type="text" name="ingredient2" value="Chicken Breast"><br><br>
+        <label>Quantity:</label><br>
+        <input type="text" name="quantity2" value="300g"><br><br>
+
+        <label>Preparation Instructions:</label><br>
+        <textarea name="instructions" rows="4" cols="50">Cook pasta, grill chicken, make cream sauce with butter and parmesan, combine all.</textarea><br><br>
+
+        <label>Common Mistakes:</label><br>
+        <textarea name="mistakes" rows="3" cols="50">Do not let the cream sauce boil too hard or it will separate.</textarea><br><br>
+
+        <input type="submit" value="Update Recipe">
+        <input type="reset" value="Reset Changes">
+    </form>
+
+    <hr>
+
+    <!-- Edit Chocolate Lava Cake -->
+    <h3 id="edit-lava-cake">Edit: Chocolate Lava Cake</h3>
+    <form action="manage-recipes.html">
+        <label for="name5">Recipe Name:</label><br>
+        <input type="text" id="name5" name="recipeName" value="Chocolate Lava Cake" required><br><br>
+
+        <label for="course5">Course Type:</label><br>
+        <select id="course5" name="course">
+            <option value="appetizers">Appetizers</option>
+            <option value="main">Main Course</option>
+            <option value="dessert" selected>Dessert</option>
+        </select><br><br>
+
+        <label>Average Cooking Time (minutes):</label><br>
+        <input type="number" name="time" value="20"><br><br>
+
+        <label>Difficulty Level (1 = Easy, 5 = Hard):</label><br>
+        <input type="range" name="difficulty" min="1" max="5" value="3"><br><br>
+
+        <label>Current Image:</label><br>
+        <img src="lava_cake.jpg" alt="lava_cake" width="100"><br><br>
+
+        <label>Change Image:</label><br>
+        <input type="file" name="recipeImage"><br><br>
+
+        <label>Ingredient 1:</label><br>
+        <input type="text" name="ingredient1" value="Dark Chocolate"><br><br>
+        <label>Quantity:</label><br>
+        <input type="text" name="quantity1" value="100g"><br><br>
+
+        <label>Ingredient 2:</label><br>
+        <input type="text" name="ingredient2" value="Butter"><br><br>
+        <label>Quantity:</label><br>
+        <input type="text" name="quantity2" value="80g"><br><br>
+
+        <label>Preparation Instructions:</label><br>
+        <textarea name="instructions" rows="4" cols="50">Melt chocolate and butter, mix with eggs and sugar, fold in flour, bake 10-12 min at 220C.</textarea><br><br>
+
+        <label>Common Mistakes:</label><br>
+        <textarea name="mistakes" rows="3" cols="50">Do not overbake or the center will set and lose the lava effect.</textarea><br><br>
+
+        <input type="submit" value="Update Recipe">
+        <input type="reset" value="Reset Changes">
+    </form>
+
+    <hr>
+
+    <!-- Edit Sambosa -->
+    <h3 id="edit-sambosa">Edit: Sambosa</h3>
+    <form action="manage-recipes.html">
+        <label for="name6">Recipe Name:</label><br>
+        <input type="text" id="name6" name="recipeName" value="Sambosa" required><br><br>
+
+        <label for="course6">Course Type:</label><br>
+        <select id="course6" name="course">
+            <option value="appetizers" selected>Appetizers</option>
+            <option value="main">Main Course</option>
+            <option value="dessert">Dessert</option>
+        </select><br><br>
+
+        <label>Average Cooking Time (minutes):</label><br>
+        <input type="number" name="time" value="40"><br><br>
+
+        <label>Difficulty Level (1 = Easy, 5 = Hard):</label><br>
+        <input type="range" name="difficulty" min="1" max="5" value="2"><br><br>
+
+        <label>Current Image:</label><br>
+        <img src="sambosa.jpg" alt="sambosa" width="100"><br><br>
+
+        <label>Change Image:</label><br>
+        <input type="file" name="recipeImage"><br><br>
+
+        <label>Ingredient 1:</label><br>
+        <input type="text" name="ingredient1" value="Spring Roll Sheets"><br><br>
+        <label>Quantity:</label><br>
+        <input type="text" name="quantity1" value="12 sheets"><br><br>
+
+        <label>Ingredient 2:</label><br>
+        <input type="text" name="ingredient2" value="Ground Beef"><br><br>
+        <label>Quantity:</label><br>
+        <input type="text" name="quantity2" value="250g"><br><br>
+
+        <label>Preparation Instructions:</label><br>
+        <textarea name="instructions" rows="4" cols="50">Cook filling, wrap in sheets, fry until golden and crispy.</textarea><br><br>
+
+        <label>Common Mistakes:</label><br>
+        <textarea name="mistakes" rows="3" cols="50">Make sure filling is fully cooled before wrapping to avoid soggy sambosa.</textarea><br><br>
+
+        <input type="submit" value="Update Recipe">
+        <input type="reset" value="Reset Changes">
+    </form>
+
+    <hr>
+
+    <!-- ============ DELETE SECTIONS ============ -->
+
+    <h2>Delete Recipe</h2>
+    <p>Warning: Deleting a recipe is permanent and cannot be undone.</p>
+
+    <table border="1" width="100%">
+        <tr>
+            <th>Recipe Name</th>
+            <th>Course Type</th>
+            <th>Confirm Delete</th>
+        </tr>
+        <tr id="delete-grilled-chicken">
+            <td>Grilled Chicken</td>
+            <td>Main Course</td>
+            <td align="center">
+                <a href="manage-recipes.html"><button>Yes, Delete</button></a>
+                <a href="manage-recipes.html"><button>Cancel</button></a>
+            </td>
+        </tr>
+        <tr id="delete-spaghetti-bolognese">
+            <td>Spaghetti Bolognese</td>
+            <td>Main Course</td>
+            <td align="center">
+                <a href="manage-recipes.html"><button>Yes, Delete</button></a>
+                <a href="manage-recipes.html"><button>Cancel</button></a>
+            </td>
+        </tr>
+        <tr id="delete-caesar-salad">
+            <td>Caesar Salad</td>
+            <td>Appetizer</td>
+            <td align="center">
+                <a href="manage-recipes.html"><button>Yes, Delete</button></a>
+                <a href="manage-recipes.html"><button>Cancel</button></a>
+            </td>
+        </tr>
+        <tr id="delete-alfredo-pasta">
+            <td>Chicken Alfredo Pasta</td>
+            <td>Main Course</td>
+            <td align="center">
+                <a href="manage-recipes.html"><button>Yes, Delete</button></a>
+                <a href="manage-recipes.html"><button>Cancel</button></a>
+            </td>
+        </tr>
+        <tr id="delete-lava-cake">
+            <td>Chocolate Lava Cake</td>
+            <td>Dessert</td>
+            <td align="center">
+                <a href="manage-recipes.html"><button>Yes, Delete</button></a>
+                <a href="manage-recipes.html"><button>Cancel</button></a>
+            </td>
+        </tr>
+        <tr id="delete-sambosa">
+            <td>Sambosa</td>
+            <td>Appetizer</td>
+            <td align="center">
+                <a href="manage-recipes.html"><button>Yes, Delete</button></a>
+                <a href="manage-recipes.html"><button>Cancel</button></a>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Cooking-Star</title>
+</head>
+<body>
+
+    <div>
+        <img src="logo.jpg" alt="logo" height="100" width="100">
+        <a href="index.html">Home</a>
+        <span>|</span>
+        <a href="login.html">Login</a>
+        <span>|</span>
+        <a href="signup.html">Sign Up</a>
+    </div>
+    <hr>
+
+    <h1>Welcome to Cooking-Star!</h1>
+    <p>Discover and share amazing recipes from around the world.</p>
+
+    <h2>Login to Your Account</h2>
+
+    <form action="user-dashboard.html">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <br><br>
+
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember me</label>
+        <span>|</span>
+        <a href="#">Forgot Password?</a>
+        <br><br>
+
+        <label>Login as:</label>
+        <input type="radio" name="role" id="user" value="user" checked>
+        <label for="user">User</label>
+        <input type="radio" name="role" id="admin" value="admin">
+        <label for="admin">Admin</label>
+        <br><br>
+
+        <input type="submit" value="Login">
+        <br><br>
+
+        <p>Don't have an account? <a href="signup.html">Register here</a></p>
+
+    </form>
+
+</body>
+</html>
