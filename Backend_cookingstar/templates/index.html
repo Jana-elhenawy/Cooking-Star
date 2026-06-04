@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نجمة الطبخ — Cooking Star</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="icon" type="image/png" href="{% static 'images/icon.png' %}">
+</head>
+<body>
+
+  <div id="glitter-container"></div>
+  <div class="chef-duo-deco"></div>
+
+  <nav class="navbar">
+    <a href="/" class="logo-link">
+      <img src="{% static 'images/NewLogo.png' %}" alt="Chef's Logo" class="logo-img">
+    </a>
+    <div class="nav-links">
+      <!-- populated by buildNavbar() in shared.js -->
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Welcome to Cooking-Star</h1>
+    <p>Discover and share delicious recipes from around the world ✨</p>
+  </div>
+
+  <div class="center-page">
+    <a href="/login/" class="btn btn-primary" id="btn-login">🔑 Login</a>
+    <a href="/signup/" class="btn btn-secondary" id="btn-signup">📝 Create an Account</a>
+  </div>
+
+  <script src="{% static 'js/glitter.js' %}"></script>
+  <script src="{% static 'js/shared.js' %}"></script>
+  <script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorites — نجمة الطبخ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="icon" type="image/png" href="{% static 'images/icon.png' %}">
+</head>
+<body>
+
+  <div id="glitter-container"></div>
+  <div class="chef-duo-deco"></div>
+
+  <nav class="navbar">
+    <a href="/user-dashboard/" class="logo-link">
+      <img src="{% static 'images/NewLogo.png' %}" alt="Chef's Logo" class="logo-img">
+    </a>
+    <div class="nav-links">
+      <!-- populated by buildNavbar() in shared.js -->
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h2>My Favorite Recipes</h2>
+    <p>Your personal collection of delicious saves </p>
+  </div>
+
+  <div class="container">
+
+    <div class="card">
+      <h3>➕ Add a Recipe to Favorites</h3>
+      <form id="add-fav-form">
+        <div style="display:flex; gap:14px; flex-wrap:wrap; align-items:flex-end;">
+          <div class="form-group" style="flex:1; min-width:200px; margin-bottom:0;">
+            <label for="recipePick">Choose a Recipe:</label>
+            <select id="recipePick" name="recipe">
+              <option value="">— Select a recipe —</option>
+              <option value="grilled-chicken"> Grilled Chicken — Main Course</option>
+              <option value="spaghetti-bolognese"> Spaghetti Bolognese — Main Course</option>
+              <option value="caesar-salad">Caesar Salad — Appetizer</option>
+              <option value="alfredo-pasta"> Chicken Alfredo Pasta — Main Course</option>
+              <option value="lava-cake"> Chocolate Lava Cake — Dessert</option>
+              <option value="sambosa"> Sambosa — Appetizer</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary" style="height:44px;">
+            Add to Favorites
+          </button>
+        </div>
+        <p id="add-fav-error" style="color:var(--pink-deep); font-weight:700; margin-top:10px; font-size:0.9rem;"></p>
+      </form>
+    </div>
+
+    <div class="card">
+      <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-bottom:18px;">
+        <h3 style="margin-bottom:0;"> Saved Recipes</h3>
+        <div class="search-bar" style="max-width:280px;">
+          <input type="search" id="fav-search" placeholder=" Filter favorites...">
+        </div>
+      </div>
+
+      <div id="fav-empty" class="empty-state" style="display:none;">
+        <div class="emoji">🫙</div>
+        <p>No favorites yet! Add some recipes above.</p>
+      </div>
+
+      <div style="overflow-x:auto;">
+        <table class="favorites-table">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Recipe Name</th>
+              <th>Course</th>
+              <th>Description</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="fav-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="toast"></div>
+
+  <script src="{% static 'js/shared.js' %}"></script>
+  <script src="{% static 'js/favorites.js' %}"></script>
+  <script src="{% static 'js/glitter.js' %}"></script>
+</body>
+</html>

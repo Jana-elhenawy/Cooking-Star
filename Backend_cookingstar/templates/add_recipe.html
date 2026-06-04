@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Recipe — نجمة الطبخ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/add_recipe.css' %}">
+  <link rel="icon" type="image/png" href="{% static 'images/icon.png' %}">
+</head>
+<body>
+
+  <div id="glitter-container"></div>
+  <div class="chef-duo-deco"></div>
+
+  <nav class="navbar">
+    <a href="/admin-dashboard/" class="logo-link">
+      <img src="{% static 'images/NewLogo.png' %}" alt="نجمة الطبخ Logo" class="logo-img">
+    </a>
+    <div class="nav-links">
+      <!-- populated by buildNavbar() in shared.js -->
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h2>➕ Add New Recipe</h2>
+    <p>Share your delicious creation with the world ✨</p>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <form id="recipe-form">
+
+        <div class="form-section">
+          <h3>🍽️ Recipe Information</h3>
+
+          <div class="form-row">
+            <label for="recipeName">Recipe Name:</label>
+            <input type="text" id="recipeName" placeholder="e.g., Grilled Salmon">
+            <div class="error-msg" id="nameError">⚠️ Please enter a recipe name</div>
+          </div>
+
+          <div class="form-row">
+            <label for="courseType">Course Type:</label>
+            <select id="courseType">
+              <option value="">— Select a course —</option>
+              <option>🥗 Appetizers</option>
+              <option>🍽️ Main Course</option>
+              <option>🍰 Dessert</option>
+              <option>🍲 Soups & Stews</option>
+              <option>🥪 Sandwiches</option>
+            </select>
+            <div class="error-msg" id="courseError">⚠️ Please select a course type</div>
+          </div>
+
+          <div class="form-row">
+            <label for="cookingTime">Cooking Time (minutes):</label>
+            <input type="number" id="cookingTime" placeholder="e.g., 30" min="1">
+            <div class="error-msg" id="timeError">⚠️ Please enter a valid cooking time</div>
+          </div>
+
+          <div class="form-row">
+            <label>Upload Recipe Image:</label>
+            <input type="file" id="imageInput" accept="image/*">
+            <div id="imagePreview"></div>
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="form-section">
+          <h3>🧂 Ingredients</h3>
+          <div id="ingredientsContainer"></div>
+          <button type="button" id="addIngredientBtn">➕ Add Ingredient</button>
+          <div class="error-msg" id="ingredientError">⚠️ Please add at least one ingredient</div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="form-section">
+          <h3>📋 Instructions</h3>
+
+          <div class="form-row">
+            <label for="instructions">Preparation Steps:</label>
+            <textarea id="instructions" placeholder="Write step-by-step instructions here..."></textarea>
+            <div class="error-msg" id="instructionsError">⚠️ Please enter preparation instructions</div>
+          </div>
+
+          <div class="form-row">
+            <label for="mistakes">Common Mistakes to Avoid:</label>
+            <textarea id="mistakes" placeholder="List any tips or common pitfalls..."></textarea>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button type="button" onclick="saveRecipe()">Save Recipe</button>
+          <button type="button" onclick="clearForm()">Clear Form</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <script src="{% static 'js/shared.js' %}"></script>
+  <script src="{% static 'js/glitter.js' %}"></script>
+  <script src="{% static 'js/add_recipe.js' %}"></script>
+</body>
+</html>

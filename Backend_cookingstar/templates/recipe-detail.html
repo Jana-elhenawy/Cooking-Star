@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Details — نجمة الطبخ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="icon" type="image/png" href="{% static 'images/icon.png' %}">
+</head>
+<body>
+
+  <div id="glitter-container"></div>
+  <div class="chef-duo-deco"></div>
+
+  <nav class="navbar">
+    <a href="/user-dashboard/" class="logo-link">
+      <img src="{% static 'images/NewLogo.png' %}" alt="Chef's Logo" class="logo-img">
+    </a>
+    <div class="nav-links">
+      <!-- populated by buildNavbar() in shared.js -->
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h2>Recipe Details</h2>
+    <p>Explore step-by-step instructions for your favourite dishes </p>
+  </div>
+
+  <div class="container">
+
+    <div class="card" style="padding:22px 30px;">
+      <h3 style="margin-bottom:12px; font-size:1.15rem;">Jump to a Recipe</h3>
+      <div class="recipe-jump-nav" id="jump-nav"></div>
+    </div>
+
+    <div class="section-divider">✦ ✦ ✦</div>
+
+    <div id="recipes-container"></div>
+
+  </div>
+
+  <div id="toast"></div>
+
+  <script src="{% static 'js/shared.js' %}"></script>
+  <script src="{% static 'js/recipe-detail.js' %}"></script>
+  <script src="{% static 'js/glitter.js' %}"></script>
+</body>
+</html>

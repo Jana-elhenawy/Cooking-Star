@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Recipes  — نجمة الطبخ</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/recipes-list.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'images/icon.png' %}">
+</head>
+<body>
+
+    <div id="glitter-container"></div>
+    <div class="chef-duo-deco"></div>
+
+    <nav class="navbar">
+        <a href="/user-dashboard/" class="logo-link">
+            <img src="{% static 'images/NewLogo.png' %}" alt="نجمة الطبخ" class="logo-img">
+        </a>
+        <div class="nav-links">
+            </div>
+    </nav>
+
+    <div class="page-header">
+        <h2>🍴 All Recipes</h2>
+        <p>Browse our delicious collection and find your next favourite dish ✨</p>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>🔍 Find a Recipe</h3>
+            <div class="search-filter-row">
+                <div class="search-bar">
+                    <input type="search" id="recipe-search" placeholder=" Search recipes...">
+                </div>
+            </div>
+            <div class="filter-row">
+                <span class="filter-label">Filter by course:</span>
+                <button class="filter-chip active" data-filter="all">✨ All</button>
+                <button class="filter-chip" data-filter="Main Course">🍗 Main Course</button>
+                <button class="filter-chip" data-filter="Appetizer">🥗 Appetizer</button>
+                <button class="filter-chip" data-filter="Dessert">🍰 Dessert</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>🍽️ Our Menu</h3>
+
+            <div id="no-results" class="empty-state" style="display:none;">
+                <div class="emoji">🫙</div>
+                <p>No recipes match your search. Try something else!</p>
+            </div>
+
+            <div class="recipes-grid" id="recipes-grid">
+                
+            </div>
+        </div>
+
+    </div>
+
+    <div id="toast"></div>
+
+    <script src="{% static 'js/shared.js' %}"></script>
+    <script src="{% static 'js/recipes-list.js' %}"></script>
+
+</body>
+</html>

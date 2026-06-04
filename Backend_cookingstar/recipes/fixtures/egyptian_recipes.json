@@ -1,0 +1,452 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 100,
+    "fields": {
+      "author": null,
+      "title": "كشري (Koshari)",
+      "description": "Egypt's beloved national dish — a hearty street-food bowl of rice, lentils, macaroni, topped with spiced tomato sauce and crispy onions.",
+      "ingredients": "[{\"name\": \"1 cup white rice\"}, {\"name\": \"1 cup brown lentils\"}, {\"name\": \"1 cup elbow macaroni\"}, {\"name\": \"1 cup vermicelli noodles\"}, {\"name\": \"2 large onions, thinly sliced\"}, {\"name\": \"3 tbsp vegetable oil\"}, {\"name\": \"4 garlic cloves, minced\"}, {\"name\": \"400g crushed tomatoes\"}, {\"name\": \"2 tbsp white vinegar\"}, {\"name\": \"1 tsp cumin\"}, {\"name\": \"1 tsp ground coriander\"}, {\"name\": \"1/2 tsp chili flakes\"}, {\"name\": \"Salt and pepper to taste\"}]",
+      "instructions": "1. Cook brown lentils in salted water until just tender (20 min), drain.\n2. Fry vermicelli in 1 tbsp oil until golden. Add rice and 2 cups water; cook 18 min on low heat.\n3. Boil macaroni until al-dente, drain.\n4. Slice onions thinly and fry in oil over medium-high heat, stirring often, until dark golden and crispy (15-20 min). Remove with slotted spoon.\n5. In same pan, sauté garlic 1 min, add crushed tomatoes, vinegar, cumin, coriander, chili, salt. Simmer 15 min.\n6. To serve: layer rice-lentil mixture, then macaroni, ladle tomato sauce on top, crown with crispy onions.",
+      "course": "Main Course",
+      "difficulty": 2,
+      "time_minutes": 60,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 101,
+    "fields": {
+      "author": null,
+      "title": "ملوخية (Mulukhiyah)",
+      "description": "A silky, garlicky green soup made from jute leaves, served over white rice or with crusty bread — a true Egyptian comfort dish.",
+      "ingredients": "[{\"name\": \"500g fresh or frozen mulukhiyah leaves, finely chopped\"}, {\"name\": \"1 whole chicken (1.5 kg) or 500g rabbit pieces\"}, {\"name\": \"8 garlic cloves, minced\"}, {\"name\": \"3 tbsp ghee or butter\"}, {\"name\": \"1 tbsp ground coriander\"}, {\"name\": \"1 tsp cumin\"}, {\"name\": \"2 bay leaves\"}, {\"name\": \"1 cinnamon stick\"}, {\"name\": \"1 onion, halved\"}, {\"name\": \"Salt and pepper\"}, {\"name\": \"White rice and pita bread to serve\"}]",
+      "instructions": "1. Simmer chicken with onion, bay leaves, cinnamon, salt in 1.5L water for 35-40 min. Remove chicken; strain and reserve broth.\n2. Bring broth to a gentle simmer. Add mulukhiyah leaves and cook 5-7 min until just tender.\n3. In a small pan, heat ghee until hot. Fry minced garlic with ground coriander and cumin, stirring rapidly, 30-60 seconds until fragrant (this is the ta'leya).\n4. Pour the sizzling garlic mixture directly into the mulukhiyah pot. Stir and cook 2 more min.\n5. Season and serve over rice with chicken pieces on the side.",
+      "course": "Main Course",
+      "difficulty": 2,
+      "time_minutes": 65,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 102,
+    "fields": {
+      "author": null,
+      "title": "فول مدمس (Ful Medames)",
+      "description": "Egypt's iconic breakfast — slow-cooked fava beans seasoned with lemon, garlic and cumin, drizzled with olive oil.",
+      "ingredients": "[{\"name\": \"2 cans (400g each) fava beans, drained\"}, {\"name\": \"4 garlic cloves, crushed\"}, {\"name\": \"Juice of 2 lemons\"}, {\"name\": \"3 tbsp olive oil\"}, {\"name\": \"1 tsp cumin\"}, {\"name\": \"1/2 tsp chili powder (optional)\"}, {\"name\": \"Salt and pepper\"}, {\"name\": \"Fresh parsley, chopped\"}, {\"name\": \"1 tomato, diced (for topping)\"}, {\"name\": \"Pita bread to serve\"}]",
+      "instructions": "1. In a saucepan, warm fava beans over medium heat with a splash of water for 5 min.\n2. Add crushed garlic, cumin, lemon juice, salt and pepper. Stir and mash about one-third of the beans roughly.\n3. Cook 5 more min until flavours meld and the mixture thickens slightly.\n4. Transfer to a serving bowl. Drizzle generously with olive oil.\n5. Top with diced tomato, fresh parsley, and a pinch of chili if desired.\n6. Serve hot with warm pita bread.",
+      "course": "Breakfast",
+      "difficulty": 1,
+      "time_minutes": 15,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 103,
+    "fields": {
+      "author": null,
+      "title": "طعمية (Ta'meya - Egyptian Falafel)",
+      "description": "Unlike Middle Eastern falafel, Egyptian ta'meya is made with fava beans — giving it a vibrant green interior and uniquely fluffy texture.",
+      "ingredients": "[{\"name\": \"500g dried split fava beans, soaked overnight\"}, {\"name\": \"1 bunch fresh parsley\"}, {\"name\": \"1 bunch fresh coriander\"}, {\"name\": \"6 spring onions, chopped\"}, {\"name\": \"4 garlic cloves\"}, {\"name\": \"1 tsp cumin\"}, {\"name\": \"1 tsp coriander powder\"}, {\"name\": \"1/2 tsp chili flakes\"}, {\"name\": \"1 tsp baking powder\"}, {\"name\": \"Salt\"}, {\"name\": \"Sesame seeds\"}, {\"name\": \"Oil for frying\"}]",
+      "instructions": "1. Drain soaked fava beans well. Pat dry.\n2. In a food processor, blend beans with parsley, coriander, spring onions and garlic until a coarse paste forms.\n3. Transfer to a bowl. Mix in cumin, coriander, chili, baking powder and salt.\n4. Refrigerate the mixture 30 min.\n5. Form small flat patties (5 cm diameter). Coat each side in sesame seeds.\n6. Heat oil to 180 degrees. Fry patties in batches 3-4 min per side until dark golden.\n7. Drain on paper towels. Serve in pita with tahini, tomato, and pickles.",
+      "course": "Appetizer",
+      "difficulty": 2,
+      "time_minutes": 40,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 104,
+    "fields": {
+      "author": null,
+      "title": "أم علي (Om Ali)",
+      "description": "Egypt's decadent national dessert — a warm bread pudding enriched with cream, nuts and coconut, baked until gloriously golden.",
+      "ingredients": "[{\"name\": \"6 sheets puff pastry, baked and crumbled\"}, {\"name\": \"500ml full-fat milk\"}, {\"name\": \"200ml double cream\"}, {\"name\": \"4 tbsp sugar\"}, {\"name\": \"1/2 cup raisins\"}, {\"name\": \"1/2 cup mixed nuts (pistachios, almonds, walnuts), chopped\"}, {\"name\": \"1/4 cup desiccated coconut\"}, {\"name\": \"1 tsp vanilla extract\"}, {\"name\": \"Extra cream for topping\"}]",
+      "instructions": "1. Preheat oven to 180 degrees.\n2. Break the baked puff pastry into bite-sized pieces and spread evenly in a deep baking dish.\n3. Scatter raisins, nuts, and coconut over the pastry.\n4. Warm milk and cream in a saucepan with sugar and vanilla until sugar dissolves.\n5. Pour the warm milk mixture evenly over the pastry.\n6. Drizzle extra cream on top and sprinkle a few extra nuts.\n7. Bake 20-25 min until the top is golden and bubbling.\n8. Serve immediately while hot.",
+      "course": "Dessert",
+      "difficulty": 1,
+      "time_minutes": 40,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 105,
+    "fields": {
+      "author": null,
+      "title": "محشي ورق عنب (Stuffed Grape Leaves)",
+      "description": "Tender grape leaves filled with spiced rice and herbs, slow-simmered in a lemony tomato broth until meltingly soft.",
+      "ingredients": "[{\"name\": \"40-50 preserved grape leaves, rinsed\"}, {\"name\": \"2 cups short-grain rice, washed\"}, {\"name\": \"300g ground beef or lamb (optional)\"}, {\"name\": \"2 tomatoes, diced\"}, {\"name\": \"1 onion, finely diced\"}, {\"name\": \"1/2 cup fresh parsley, chopped\"}, {\"name\": \"1/2 cup fresh dill, chopped\"}, {\"name\": \"1/2 cup fresh mint, chopped\"}, {\"name\": \"Juice of 2 lemons\"}, {\"name\": \"3 tbsp olive oil\"}, {\"name\": \"1 tsp allspice\"}, {\"name\": \"1 tsp cinnamon\"}, {\"name\": \"Salt and pepper\"}]",
+      "instructions": "1. Mix rice with tomatoes, onion, parsley, dill, mint, spices, olive oil, half the lemon juice, salt and pepper.\n2. Lay a grape leaf flat, vein-side up. Place 1 tsp of filling near the stem end.\n3. Fold in the sides, then roll firmly from bottom to top. Repeat for all leaves.\n4. Line the bottom of a heavy pot with a few grape leaves to prevent sticking.\n5. Pack the rolls in tight, seam-side down, in layers.\n6. Pour remaining lemon juice and enough water to just cover rolls. Weigh down with an inverted plate.\n7. Bring to a boil, then reduce to lowest heat. Cover and cook 45-55 min until rice is tender.",
+      "course": "Appetizer",
+      "difficulty": 3,
+      "time_minutes": 90,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 106,
+    "fields": {
+      "author": null,
+      "title": "حمام محشي (Stuffed Pigeon)",
+      "description": "A prestigious Egyptian delicacy — pigeons stuffed with freekeh or rice and slow-roasted until the skin is amber and fragrant.",
+      "ingredients": "[{\"name\": \"4 whole pigeons, cleaned\"}, {\"name\": \"1.5 cups freekeh (cracked green wheat) or rice\"}, {\"name\": \"1 onion, diced\"}, {\"name\": \"3 tbsp ghee or butter\"}, {\"name\": \"1 tsp allspice\"}, {\"name\": \"1 tsp cinnamon\"}, {\"name\": \"1/2 tsp black pepper\"}, {\"name\": \"3 cups chicken or pigeon broth\"}, {\"name\": \"Salt\"}, {\"name\": \"Extra ghee for rubbing the birds\"}]",
+      "instructions": "1. Sauté diced onion in ghee until soft. Add freekeh and spices; stir 2 min.\n2. Add 2 cups broth, bring to boil, reduce heat, cover and cook 15 min until freekeh is 70% cooked. Season well.\n3. Preheat oven to 200 degrees.\n4. Season the pigeons inside and out with salt and allspice.\n5. Fill each pigeon cavity loosely with the freekeh mixture. Tie legs together.\n6. Rub the outside generously with ghee.\n7. Place in a roasting tin with remaining broth poured around them.\n8. Cover with foil and roast 30 min. Uncover and roast a further 20-25 min until deeply golden.",
+      "course": "Main Course",
+      "difficulty": 3,
+      "time_minutes": 90,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 107,
+    "fields": {
+      "author": null,
+      "title": "بسبوسة (Basbousa)",
+      "description": "A fragrant semolina cake soaked in rose water syrup — Egypt's most-loved everyday dessert.",
+      "ingredients": "[{\"name\": \"2 cups fine semolina\"}, {\"name\": \"1/2 cup desiccated coconut\"}, {\"name\": \"1/2 cup sugar\"}, {\"name\": \"1/2 cup unsalted butter, melted\"}, {\"name\": \"1 cup plain yoghurt\"}, {\"name\": \"1 tsp baking powder\"}, {\"name\": \"Blanched almonds for topping\"}, {\"name\": \"For syrup: 1 cup sugar, 1 cup water, 1 tbsp rose water, 1 tsp lemon juice\"}]",
+      "instructions": "1. Preheat oven to 180 degrees. Grease a 20x30cm baking tin.\n2. Mix semolina, coconut, sugar, melted butter, yoghurt and baking powder until combined.\n3. Spread evenly in the tin. Score into diamonds or squares with a knife.\n4. Press a whole almond into the centre of each piece.\n5. Bake 25-30 min until golden brown.\n6. Meanwhile, make syrup: dissolve sugar in water, bring to boil, simmer 8 min, add rose water and lemon juice.\n7. As soon as the cake comes out of the oven, pour the hot syrup evenly over it.\n8. Allow to absorb and cool 30 min before serving.",
+      "course": "Dessert",
+      "difficulty": 1,
+      "time_minutes": 55,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 108,
+    "fields": {
+      "author": null,
+      "title": "شوربة عدس (Egyptian Red Lentil Soup)",
+      "description": "A thick, velvety soup seasoned with cumin and topped with a golden lemon drizzle — warming Egyptian soul food.",
+      "ingredients": "[{\"name\": \"2 cups red lentils, rinsed\"}, {\"name\": \"1 large onion, chopped\"}, {\"name\": \"3 garlic cloves, minced\"}, {\"name\": \"2 medium carrots, diced\"}, {\"name\": \"2 tbsp vegetable oil\"}, {\"name\": \"1.5 tsp cumin\"}, {\"name\": \"1 tsp turmeric\"}, {\"name\": \"1.5 litres vegetable or chicken stock\"}, {\"name\": \"Juice of 1 lemon\"}, {\"name\": \"Salt and pepper\"}, {\"name\": \"Crispy pita chips and lemon wedges to serve\"}]",
+      "instructions": "1. Sauté onion and carrots in oil over medium heat for 7 min until softened.\n2. Add garlic, cumin and turmeric; cook 1 min.\n3. Add lentils and stock. Bring to boil, skim foam, reduce heat.\n4. Simmer uncovered 25-30 min until lentils completely dissolve.\n5. Blend the soup smooth with a hand blender.\n6. Stir in lemon juice and season generously.\n7. Serve in bowls topped with crispy pita chips and a lemon wedge.",
+      "course": "Soup",
+      "difficulty": 1,
+      "time_minutes": 45,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 109,
+    "fields": {
+      "author": null,
+      "title": "كنافة (Kunafa)",
+      "description": "A show-stopping dessert — shredded wheat pastry layered with clotted cream, baked until crisp and drowned in fragrant rose water syrup.",
+      "ingredients": "[{\"name\": \"500g kataifi (shredded wheat pastry)\"}, {\"name\": \"200g unsalted butter, melted\"}, {\"name\": \"500g clotted cream (ashta) or sweet white cheese\"}, {\"name\": \"For syrup: 2 cups sugar, 1 cup water, 1 tbsp rose water, 1 tbsp orange blossom water\"}, {\"name\": \"Crushed pistachios for garnish\"}]",
+      "instructions": "1. Make syrup: boil sugar and water 8 min. Add rose water and orange blossom water. Set aside to cool.\n2. Preheat oven to 190 degrees. Brush a 30cm round tin with butter.\n3. Toss kataifi strands with all the melted butter until every strand is coated.\n4. Press half the kataifi firmly into the tin to form the base layer.\n5. Spread the clotted cream or cheese evenly over the base.\n6. Lay the remaining kataifi on top and press down firmly.\n7. Bake 30-35 min until the top is a deep golden colour.\n8. Immediately pour the cold syrup over the hot kunafa.\n9. Invert onto a serving plate and garnish with crushed pistachios.",
+      "course": "Dessert",
+      "difficulty": 2,
+      "time_minutes": 55,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 110,
+    "fields": {
+      "author": null,
+      "title": "فتة (Fatta)",
+      "description": "A festive Egyptian dish of crispy bread layered under slow-cooked lamb, rice, and garlicky tomato broth — traditionally served at Eid.",
+      "ingredients": "[{\"name\": \"1 kg lamb on the bone (shank or shoulder)\"}, {\"name\": \"2 cups white rice\"}, {\"name\": \"3 large pita breads, torn and toasted crispy\"}, {\"name\": \"4 garlic cloves, crushed\"}, {\"name\": \"400g crushed tomatoes\"}, {\"name\": \"3 tbsp white vinegar\"}, {\"name\": \"2 tbsp ghee\"}, {\"name\": \"1 tsp allspice\"}, {\"name\": \"1 cinnamon stick\"}, {\"name\": \"Bay leaves\"}, {\"name\": \"Salt and pepper\"}]",
+      "instructions": "1. Simmer lamb with cinnamon, bay leaves, allspice, salt in 2L water for 1.5 hours until very tender. Reserve broth. Shred the lamb.\n2. Cook rice in 2 cups of the reserved lamb broth.\n3. Fry garlic in ghee 1 min. Add crushed tomatoes, vinegar, salt. Simmer 12 min.\n4. To assemble: spread crispy pita in a wide deep dish.\n5. Ladle hot lamb broth over the pita so it soaks in.\n6. Spread the cooked rice over the pita.\n7. Top with shredded lamb.\n8. Pour the tomato-garlic sauce over everything.",
+      "course": "Main Course",
+      "difficulty": 2,
+      "time_minutes": 120,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 111,
+    "fields": {
+      "author": null,
+      "title": "مسقعة (Egyptian Moussaka)",
+      "description": "Layers of fried aubergine baked in a rich spiced tomato sauce — simpler than the Greek version and deeply satisfying.",
+      "ingredients": "[{\"name\": \"3 large aubergines (eggplants), sliced into rounds\"}, {\"name\": \"500g ground beef\"}, {\"name\": \"1 large onion, diced\"}, {\"name\": \"4 garlic cloves, minced\"}, {\"name\": \"400g crushed tomatoes\"}, {\"name\": \"2 tbsp tomato paste\"}, {\"name\": \"1 tsp allspice\"}, {\"name\": \"1 tsp cumin\"}, {\"name\": \"Salt and pepper\"}, {\"name\": \"Oil for frying\"}, {\"name\": \"Fresh parsley to garnish\"}]",
+      "instructions": "1. Salt aubergine slices and leave 20 min, then pat dry. Fry in hot oil until golden on both sides. Drain.\n2. Sauté onion in 2 tbsp oil until soft. Add beef and cook until browned.\n3. Add garlic, allspice, cumin, tomato paste; cook 2 min. Add crushed tomatoes, season. Simmer 15 min.\n4. Preheat oven to 180 degrees.\n5. In a baking dish, layer aubergine slices, then meat sauce, then another layer of aubergine.\n6. Top with remaining sauce.\n7. Bake 25-30 min until bubbling and slightly caramelised on top.\n8. Rest 10 min before serving. Garnish with parsley.",
+      "course": "Main Course",
+      "difficulty": 2,
+      "time_minutes": 75,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 112,
+    "fields": {
+      "author": null,
+      "title": "شكشوكة (Shakshuka)",
+      "description": "Eggs poached in a spiced vibrant tomato and pepper sauce — a popular Egyptian and North African breakfast.",
+      "ingredients": "[{\"name\": \"6 large eggs\"}, {\"name\": \"4 large tomatoes, diced (or 400g tinned)\"}, {\"name\": \"2 red or green bell peppers, diced\"}, {\"name\": \"1 large onion, diced\"}, {\"name\": \"4 garlic cloves, minced\"}, {\"name\": \"3 tbsp olive oil\"}, {\"name\": \"2 tbsp tomato paste\"}, {\"name\": \"1 tsp cumin\"}, {\"name\": \"1 tsp sweet paprika\"}, {\"name\": \"1/2 tsp chili flakes\"}, {\"name\": \"Salt and pepper\"}, {\"name\": \"Fresh parsley or coriander to serve\"}]",
+      "instructions": "1. Heat oil in a wide pan over medium heat. Saute onion until soft (7 min).\n2. Add peppers, cook 5 min. Add garlic, cumin, paprika, chili; cook 1 min.\n3. Stir in tomato paste and cook 2 min. Add diced tomatoes and season.\n4. Simmer the sauce 15-20 min until thickened and rich.\n5. Make 6 wells in the sauce. Crack an egg into each well.\n6. Cover the pan and cook on low heat 5-8 min until whites are set but yolks are still runny.\n7. Scatter herbs on top and serve directly from the pan with warm pita bread.",
+      "course": "Breakfast",
+      "difficulty": 1,
+      "time_minutes": 35,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 113,
+    "fields": {
+      "author": null,
+      "title": "كفتة مشوية (Grilled Kofta)",
+      "description": "Juicy seasoned ground meat skewers grilled over charcoal — a staple of Egyptian street food and home kitchens alike.",
+      "ingredients": "[{\"name\": \"700g ground beef (or half beef, half lamb)\"}, {\"name\": \"1 large onion, grated\"}, {\"name\": \"4 garlic cloves, minced\"}, {\"name\": \"1/2 cup fresh parsley, finely chopped\"}, {\"name\": \"1 tsp allspice\"}, {\"name\": \"1 tsp cumin\"}, {\"name\": \"1/2 tsp cinnamon\"}, {\"name\": \"1/2 tsp chili flakes\"}, {\"name\": \"Salt and pepper\"}, {\"name\": \"Metal or soaked wooden skewers\"}]",
+      "instructions": "1. Grate onion and squeeze out the excess liquid through a cloth.\n2. Combine meat, drained onion, garlic, parsley, and all spices. Mix thoroughly for 3-4 min until slightly sticky.\n3. Refrigerate 30 min.\n4. Divide into even portions. Mould each portion around a skewer into a long cylinder, pressing firmly.\n5. Grill on a preheated barbecue or griddle pan over high heat, turning every 2-3 min for 10-12 min total.\n6. Serve with baladi salad, tahini sauce and warm pita.",
+      "course": "Main Course",
+      "difficulty": 1,
+      "time_minutes": 45,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 114,
+    "fields": {
+      "author": null,
+      "title": "سلطة بلدي (Baladi Salad)",
+      "description": "Egypt's classic peasant salad — a fresh chopped salad of tomatoes, cucumber, onion and parsley dressed simply with lemon and olive oil.",
+      "ingredients": "[{\"name\": \"4 ripe tomatoes, finely diced\"}, {\"name\": \"2 cucumbers, finely diced\"}, {\"name\": \"1 red onion, finely diced\"}, {\"name\": \"Large handful fresh parsley, finely chopped\"}, {\"name\": \"Handful fresh mint leaves, chopped\"}, {\"name\": \"Juice of 2 lemons\"}, {\"name\": \"3 tbsp olive oil\"}, {\"name\": \"Salt\"}, {\"name\": \"Pinch of sumac (optional)\"}]",
+      "instructions": "1. Dice tomatoes, cucumbers and onion as finely and evenly as possible.\n2. Place in a large bowl. Add parsley and mint.\n3. Dress with lemon juice and olive oil.\n4. Season generously with salt.\n5. Sprinkle sumac on top if using.\n6. Toss well and taste. Adjust lemon and salt.\n7. Serve immediately alongside any main dish.",
+      "course": "Appetizer",
+      "difficulty": 1,
+      "time_minutes": 15,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 115,
+    "fields": {
+      "author": null,
+      "title": "خشاف (Khoshaf - Ramadan Dried Fruit Compote)",
+      "description": "A sweet Egyptian compote of dried fruits soaked overnight in fragrant rose water — a traditional Ramadan dessert.",
+      "ingredients": "[{\"name\": \"200g dried apricots\"}, {\"name\": \"200g dried prunes\"}, {\"name\": \"100g golden raisins\"}, {\"name\": \"100g blanched almonds\"}, {\"name\": \"50g pine nuts\"}, {\"name\": \"4 cups water\"}, {\"name\": \"4 tbsp sugar\"}, {\"name\": \"2 tbsp rose water\"}, {\"name\": \"1 tbsp orange blossom water\"}]",
+      "instructions": "1. Place dried apricots, prunes and raisins in a large bowl.\n2. Dissolve sugar in water. Add rose water and orange blossom water.\n3. Pour the scented water over the fruit.\n4. Cover and refrigerate overnight (minimum 8 hours) to allow fruit to plump fully.\n5. Before serving, stir in almonds and pine nuts.\n6. Serve chilled in small bowls with a little of the sweet soaking liquid.",
+      "course": "Dessert",
+      "difficulty": 1,
+      "time_minutes": 10,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 116,
+    "fields": {
+      "author": null,
+      "title": "دجاج مشوي بالتوابل (Egyptian Spiced Grilled Chicken)",
+      "description": "Whole chicken marinated in a bold blend of Egyptian spices and yoghurt, then roasted until the skin is deeply caramelised.",
+      "ingredients": "[{\"name\": \"1 whole chicken, jointed into 8 pieces\"}, {\"name\": \"1 cup plain yoghurt\"}, {\"name\": \"4 garlic cloves, crushed\"}, {\"name\": \"Juice of 2 lemons\"}, {\"name\": \"3 tbsp vegetable oil\"}, {\"name\": \"2 tsp baharat (Egyptian seven spice)\"}, {\"name\": \"1 tsp cumin\"}, {\"name\": \"1 tsp sweet paprika\"}, {\"name\": \"1 tsp turmeric\"}, {\"name\": \"1/2 tsp cinnamon\"}, {\"name\": \"Salt and pepper\"}]",
+      "instructions": "1. Score the chicken pieces deeply with a sharp knife.\n2. Whisk together yoghurt, garlic, lemon juice, oil, and all spices. Season generously.\n3. Coat chicken pieces thoroughly in the marinade. Cover and refrigerate minimum 4 hours.\n4. When ready to cook, remove chicken from fridge 30 min early.\n5. Grill on a preheated barbecue or roast in oven at 200 degrees for 35-40 min, turning halfway.\n6. Rest 5 min. Serve with baladi salad, tahini and pita.",
+      "course": "Main Course",
+      "difficulty": 1,
+      "time_minutes": 50,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 117,
+    "fields": {
+      "author": null,
+      "title": "طاجن خضار (Egyptian Vegetable Tagine)",
+      "description": "A hearty oven-cooked vegetable stew with chickpeas in a cumin-spiced tomato broth — comforting Egyptian peasant food at its finest.",
+      "ingredients": "[{\"name\": \"2 courgettes, sliced\"}, {\"name\": \"2 aubergines, cubed\"}, {\"name\": \"2 potatoes, peeled and cubed\"}, {\"name\": \"400g chickpeas (cooked or tinned)\"}, {\"name\": \"1 large onion, sliced\"}, {\"name\": \"4 garlic cloves, minced\"}, {\"name\": \"400g crushed tomatoes\"}, {\"name\": \"3 tbsp olive oil\"}, {\"name\": \"1 tsp cumin\"}, {\"name\": \"1 tsp coriander\"}, {\"name\": \"1/2 tsp allspice\"}, {\"name\": \"Salt, pepper\"}, {\"name\": \"Fresh parsley to garnish\"}]",
+      "instructions": "1. Preheat oven to 190 degrees.\n2. Toss aubergine, courgette and potato with 2 tbsp olive oil, salt and pepper.\n3. Spread on a tray and roast 20 min until lightly golden.\n4. In a deep oven dish, saute onion in 1 tbsp oil until soft. Add garlic and spices; cook 1 min.\n5. Stir in crushed tomatoes and chickpeas. Season.\n6. Add the roasted vegetables and fold gently.\n7. Add a cup of water. Cover with foil.\n8. Bake 30 min, then uncover and bake 15 min more until sauce is thick.\n9. Garnish with parsley. Serve with rice or bread.",
+      "course": "Main Course",
+      "difficulty": 1,
+      "time_minutes": 75,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 118,
+    "fields": {
+      "author": null,
+      "title": "لقيمات (Luqaimat - Egyptian Doughnuts)",
+      "description": "Crispy on the outside, airy within — these small deep-fried dough balls drizzled with honey are a popular Egyptian street treat.",
+      "ingredients": "[{\"name\": \"2 cups all-purpose flour\"}, {\"name\": \"1 tsp instant yeast\"}, {\"name\": \"1 tsp sugar\"}, {\"name\": \"Pinch of salt\"}, {\"name\": \"1 cup warm water\"}, {\"name\": \"1 tbsp plain yoghurt\"}, {\"name\": \"Oil for deep frying\"}, {\"name\": \"Honey and sesame seeds to serve\"}]",
+      "instructions": "1. Mix flour, yeast, sugar and salt. Add warm water and yoghurt; stir to a smooth, sticky batter.\n2. Cover and leave to rest in a warm place 1 hour until bubbled and risen.\n3. Heat oil in a deep pan to 175 degrees.\n4. Wet your hands or use a spoon to drop small portions of batter (walnut-sized) into the hot oil.\n5. Fry in batches without crowding, turning occasionally, until uniformly deep golden (about 4 min).\n6. Drain on paper towels.\n7. Drizzle generously with honey and scatter sesame seeds. Serve immediately.",
+      "course": "Dessert",
+      "difficulty": 1,
+      "time_minutes": 30,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 119,
+    "fields": {
+      "author": null,
+      "title": "سمك بلطي مشوي (Grilled Nile Tilapia)",
+      "description": "Whole tilapia grilled over charcoal with herbs and spices — the classic street food of Alexandria and Cairo's Nile-side restaurants.",
+      "ingredients": "[{\"name\": \"2 whole tilapia (about 700g each), cleaned\"}, {\"name\": \"1 bunch fresh parsley, chopped\"}, {\"name\": \"1 bunch fresh coriander, chopped\"}, {\"name\": \"6 garlic cloves, minced\"}, {\"name\": \"Juice of 2 lemons\"}, {\"name\": \"4 tbsp olive oil\"}, {\"name\": \"1 tsp cumin\"}, {\"name\": \"1 tsp coriander powder\"}, {\"name\": \"1/2 tsp turmeric\"}, {\"name\": \"Salt and black pepper\"}, {\"name\": \"Lemon wedges and tahini sauce to serve\"}]",
+      "instructions": "1. Score fish deeply on both sides with 3-4 diagonal slashes.\n2. Mix garlic, fresh herbs, lemon juice, oil and all dry spices into a paste.\n3. Rub the paste all over the fish and into the scored cuts.\n4. Marinate 1 hour at room temperature or 2 hours in the fridge.\n5. Grill on a preheated barbecue over medium-high heat for 8-10 min per side, until the flesh flakes easily.\n6. Alternatively, roast in oven at 220 degrees for 20-25 min.\n7. Serve with lemon wedges, tahini sauce and baladi bread.",
+      "course": "Main Course",
+      "difficulty": 1,
+      "time_minutes": 35,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 120,
+    "fields": {
+      "author": null,
+      "title": "طاجن لحم بالخضار (Braised Lamb with Vegetables)",
+      "description": "Slow-braised lamb with root vegetables in a warming spiced sauce — a Sunday lunch staple in Egyptian homes.",
+      "ingredients": "[{\"name\": \"800g lamb shoulder, cut into large pieces\"}, {\"name\": \"3 medium potatoes, quartered\"}, {\"name\": \"2 large carrots, chunked\"}, {\"name\": \"2 tomatoes, quartered\"}, {\"name\": \"1 large onion, roughly chopped\"}, {\"name\": \"4 garlic cloves\"}, {\"name\": \"400g crushed tomatoes\"}, {\"name\": \"2 tbsp tomato paste\"}, {\"name\": \"1 tsp baharat\"}, {\"name\": \"1 tsp cumin\"}, {\"name\": \"Salt and pepper\"}, {\"name\": \"3 tbsp vegetable oil\"}, {\"name\": \"Fresh parsley\"}]",
+      "instructions": "1. Season lamb well. Brown in oil over high heat in a wide pot, 3-4 min per side. Remove.\n2. In same pot, saute onion 5 min. Add garlic and spices; cook 1 min.\n3. Add tomato paste, crushed tomatoes and 500ml water. Return lamb.\n4. Bring to boil, cover, reduce to a gentle simmer for 45 min.\n5. Add potatoes and carrots. Cover and cook 25-30 min until vegetables are tender.\n6. Add fresh tomatoes in the last 10 min.\n7. Taste and adjust seasoning.\n8. Serve in the pot with rice or bread and fresh parsley scattered over.",
+      "course": "Main Course",
+      "difficulty": 2,
+      "time_minutes": 100,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 121,
+    "fields": {
+      "author": null,
+      "title": "هريسة (Egyptian Semolina Harissa Cake)",
+      "description": "A moist, orange-infused semolina cake flavoured with anise and soaked in honey syrup — a classic Egyptian sweet.",
+      "ingredients": "[{\"name\": \"2 cups coarse semolina\"}, {\"name\": \"1/2 cup all-purpose flour\"}, {\"name\": \"1 cup sugar\"}, {\"name\": \"1 cup plain yoghurt\"}, {\"name\": \"1/2 cup vegetable oil\"}, {\"name\": \"2 eggs\"}, {\"name\": \"Zest of 1 orange\"}, {\"name\": \"1 tsp anise seeds\"}, {\"name\": \"1 tsp baking powder\"}, {\"name\": \"For syrup: 1 cup honey, 1/2 cup water, juice of half a lemon\"}]",
+      "instructions": "1. Preheat oven to 175 degrees. Grease a square baking tin.\n2. Whisk together yoghurt, oil, eggs, orange zest and anise seeds.\n3. Add semolina, flour, sugar and baking powder. Mix until combined.\n4. Pour into tin and bake 30-35 min until golden and a skewer comes out clean.\n5. Meanwhile, warm honey, water and lemon juice together until smooth.\n6. Pour warm syrup over hot cake immediately from the oven.\n7. Allow syrup to absorb and cake to cool before slicing.",
+      "course": "Dessert",
+      "difficulty": 1,
+      "time_minutes": 50,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 122,
+    "fields": {
+      "author": null,
+      "title": "عيش بلدي (Baladi Bread)",
+      "description": "Egypt's traditional thick wholesome flatbread with a hollow pocket — the staple bread eaten at every meal across the country.",
+      "ingredients": "[{\"name\": \"3 cups whole wheat flour\"}, {\"name\": \"1 cup plain white flour\"}, {\"name\": \"1.5 tsp instant yeast\"}, {\"name\": \"1.5 tsp salt\"}, {\"name\": \"1 cup warm water (adjust as needed)\"}, {\"name\": \"1 tsp sugar\"}]",
+      "instructions": "1. Dissolve yeast and sugar in warm water; leave 5 min until frothy.\n2. Combine flours and salt in a large bowl. Make a well and pour in the yeast mixture.\n3. Mix to form a dough. Knead on a floured surface for 8-10 min until smooth and elastic.\n4. Cover and leave to rise in a warm spot for 1 hour until doubled.\n5. Preheat oven to the highest setting with a heavy baking tray inside.\n6. Divide dough into 8 balls. Roll each into a disc about 6mm thick.\n7. Place directly on the screaming-hot tray. Bake 4-5 min until puffed and lightly spotted.\n8. Wrap in a cloth to keep soft.",
+      "course": "Bread",
+      "difficulty": 1,
+      "time_minutes": 90,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 123,
+    "fields": {
+      "author": null,
+      "title": "ليمون بالنعناع (Egyptian Mint Lemonade)",
+      "description": "Egypt's essential summer refreshment — freshly blended whole lemons with mint and sugar, served ice cold.",
+      "ingredients": "[{\"name\": \"4 lemons, ends removed and roughly chopped (peel included)\"}, {\"name\": \"Large bunch fresh mint leaves\"}, {\"name\": \"4 tbsp sugar (or to taste)\"}, {\"name\": \"4 cups cold water\"}, {\"name\": \"Lots of ice\"}]",
+      "instructions": "1. Place chopped lemons (skin included) in a blender with mint, sugar and 1 cup of water.\n2. Blend on high for 30 seconds.\n3. Strain through a fine sieve into a jug, pressing the pulp to extract all the juice.\n4. Add remaining water and stir well.\n5. Taste — adjust sweetness. It should be sharp, aromatic and refreshingly bitter.\n6. Pour over ice-filled glasses.\n7. Garnish with a sprig of fresh mint.",
+      "course": "Drink",
+      "difficulty": 1,
+      "time_minutes": 10,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 124,
+    "fields": {
+      "author": null,
+      "title": "بابا غنوج (Baba Ganoush)",
+      "description": "Silky fire-roasted aubergine blended with tahini, garlic and lemon — served as a mezze dip or side dish.",
+      "ingredients": "[{\"name\": \"3 large aubergines\"}, {\"name\": \"3 tbsp tahini\"}, {\"name\": \"2 garlic cloves, crushed\"}, {\"name\": \"Juice of 1.5 lemons\"}, {\"name\": \"3 tbsp olive oil\"}, {\"name\": \"1/2 tsp cumin\"}, {\"name\": \"Salt\"}, {\"name\": \"Fresh parsley and paprika to serve\"}]",
+      "instructions": "1. Place whole aubergines directly over a gas flame or under a grill on the highest setting.\n2. Char on all sides, turning with tongs, for 15-20 min until completely soft and collapsed inside.\n3. Place in a colander and allow to cool slightly. Peel off and discard all charred skin.\n4. Squeeze the flesh gently to remove bitter juices.\n5. Chop the flesh finely or mash — do not use a food processor or it becomes too smooth.\n6. Mix in tahini, crushed garlic, lemon juice, cumin and salt.\n7. Taste and adjust. The smokiness is the key flavour.\n8. Transfer to a plate. Drizzle with olive oil and garnish with parsley and paprika.",
+      "course": "Appetizer",
+      "difficulty": 1,
+      "time_minutes": 30,
+      "image": null,
+      "category": "Egyptian",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  }
+]

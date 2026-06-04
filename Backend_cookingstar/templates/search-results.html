@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Recipes — نجمة الطبخ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/search.css' %}">
+  <link rel="icon" type="image/png" href="{% static 'images/icon.png' %}">
+</head>
+<body>
+
+  <div id="glitter-container"></div>
+  <div class="chef-duo-deco"></div>
+
+  <nav class="navbar">
+    <a href="/user-dashboard/" class="logo-link">
+      <img src="{% static 'images/NewLogo.png' %}" alt="Cooking Star Logo" class="logo-img">
+    </a>
+    <div class="nav-links">
+      <!-- populated by buildNavbar() in shared.js -->
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h2>Search Recipes</h2>
+    <p>Find your next favourite dish in seconds</p>
+  </div>
+
+  <div class="container" style="margin-top: 20px;">
+
+    <div class="search-panel">
+      <div class="search-main-row">
+        <input type="search" id="search-input" placeholder="e.g. Grilled Chicken, pasta, lemon...">
+        <button class="btn btn-primary" onclick="runSearch()">Search</button>
+        <button class="btn btn-secondary" onclick="clearSearch()">Clear</button>
+      </div>
+      <div class="search-options">
+        <label class="radio-option">
+          <input type="radio" name="stype" id="by-dish" value="dish" checked onchange="runSearch()">
+          🍽️ By Dish Name
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="stype" id="by-ingredient" value="ingredient" onchange="runSearch()">
+          🧂 By Ingredient
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="stype" id="by-course" value="course" onchange="runSearch()">
+          📋 By Course
+        </label>
+      </div>
+      <div id="recent-searches-wrap" style="margin-top: 14px; display: none;">
+        <div style="font-size: 0.8rem; font-weight: 800; color: var(--text-light); margin-bottom: 6px;">Recent searches:</div>
+        <div class="recent-tags" id="recent-tags"></div>
+      </div>
+    </div>
+
+    <div class="results-header" id="results-header" style="display: none;">
+      <div class="results-count">Found <span id="result-count">0</span> results</div>
+      <select class="sort-select" id="sort-select" onchange="sortAndRender()">
+        <option value="default">Sort: Default</option>
+        <option value="name">Sort: A–Z</option>
+        <option value="time">Sort: Quickest First</option>
+        <option value="difficulty">Sort: Easiest First</option>
+      </select>
+    </div>
+
+    <div id="results-container"></div>
+
+    <div class="no-results" id="no-results">
+      <h3>🫙 No recipes found</h3>
+      <p>Try searching by a different name, ingredient, or course type.</p>
+    </div>
+
+    <div class="default-state" id="default-state">
+      <div class="default-state-title">What are you craving?</div>
+      <p>Type a dish name or ingredient to get started!</p>
+    </div>
+
+  </div>
+
+  <div id="toast"></div>
+
+  <script src="{% static 'js/glitter.js' %}"></script>
+  <script src="{% static 'js/shared.js' %}"></script>
+  <script>
+    initSearchPage();
+  </script>
+
+</body>
+</html>

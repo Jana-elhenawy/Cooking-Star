@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up — نجمة الطبخ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login-signup.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'images/NewLogo.png' %}">
+</head>
+<body>
+    <div id="glitter-container"></div>
+
+    <nav class="navbar">
+        <a href="/" class="logo-link">
+            <img src="{% static 'images/NewLogo.png' %}" alt="نجمة الطبخ" class="logo-img">
+        </a>
+        <div class="nav-links">
+            <!-- built by buildNavbar() in shared.js -->
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Join Cooking-Star!</h1>
+        <p>Create your account and start exploring recipes ✨</p>
+    </header>
+
+    <main class="auth-container">
+        <div class="card" style="max-width:550px; width:100%;">
+            <h3>Create Account</h3>
+
+            <form id="signup-form">
+                <div class="form-group-horizontal">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" placeholder="Enter your first name" required>
+                </div>
+
+                <div class="form-group-horizontal">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" placeholder="Enter your last name" required>
+                </div>
+
+                <div class="form-group-horizontal">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Choose a username" required>
+                </div>
+
+                <div class="form-group-horizontal">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group-horizontal">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Create a password (min 6 chars)" required>
+                </div>
+
+                <div class="form-group-horizontal">
+                    <label for="confirm-password">Confirm:</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                </div>
+
+                <div class="role-selection">
+                    <label>Sign up as:</label>
+                    <label style="display:inline;"><input type="radio" name="role" value="user" checked> 👤 User</label>
+                    <label style="display:inline;"><input type="radio" name="role" value="admin"> 🛠️ Admin</label>
+                </div>
+
+                <div class="role-selection">
+                    <label>Gender:</label>
+                    <label style="display:inline;"><input type="radio" name="gender" value="male" checked> Male</label>
+                    <label style="display:inline;"><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+
+                <div id="signup-error" style="
+                    display:none; color:var(--red-warm);
+                    font-size:0.85rem; font-weight:800;
+                    text-align:center; margin-bottom:12px;
+                    background:rgba(232,76,61,0.08);
+                    padding:10px 16px; border-radius:12px;
+                    border:1.5px solid rgba(232,76,61,0.3);
+                "></div>
+
+                <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; margin-top:10px;">
+                     Create Account
+                </button>
+
+                <p class="auth-footer">
+                    Already have an account? <a href="/login/">Login here</a>
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <div id="toast"></div>
+
+    <script src="{% static 'js/shared.js' %}"></script>
+    <script src="{% static 'js/signup.js' %}"></script>
+    <script src="{% static 'js/glitter.js' %}"></script>
+</body>
+</html>

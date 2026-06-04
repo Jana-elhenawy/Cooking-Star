@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard — نجمة الطبخ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/admin.css' %}">
+  <link rel="icon" type="image/png" href="{% static 'images/icon.png' %}">
+</head>
+<body>
+
+  <div id="glitter-container"></div>
+  <div class="chef-duo-deco"></div>
+
+  <nav class="navbar">
+    <a href="/admin-dashboard/" class="logo-link">
+      <img src="{% static 'images/NewLogo.png' %}" alt="نجمة الطبخ Logo" class="logo-img">
+    </a>
+    <div class="nav-links">
+      <!-- populated by buildNavbar() in shared.js -->
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h2>🌟 Admin Dashboard</h2>
+    <p>Welcome back! Here's what's cooking in your kitchen ✨</p>
+  </div>
+
+  <div class="container">
+
+    <div class="card" style="animation-delay: 0.05s;">
+      <h3>📊 Quick Stats</h3>
+      <div class="admin-stats-grid">
+
+        <div class="stat-card">
+          <div class="stat-icon">🍽️</div>
+          <div class="stat-info">
+            <div class="stat-number" id="total-recipes">0</div>
+            <div class="stat-label">Total Recipes</div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">👥</div>
+          <div class="stat-info">
+            <div class="stat-number" id="total-users">0</div>
+            <div class="stat-label">Total Users</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="animation-delay: 0.12s;">
+      <h3>⚡ Quick Actions</h3>
+      <div class="admin-actions-grid">
+
+        <a href="/add-recipe/" class="action-tile">
+          <div class="action-tile-icon">➕</div>
+          <div class="action-tile-label">Add Recipe</div>
+          <div class="action-tile-sub">Create a new dish</div>
+        </a>
+
+        <a href="/manage-recipes/" class="action-tile">
+          <div class="action-tile-icon">📋</div>
+          <div class="action-tile-label">Manage Recipes</div>
+          <div class="action-tile-sub">Edit or delete recipes</div>
+        </a>
+
+        <a href="/favorites/" class="action-tile">
+          <div class="action-tile-icon">❤️</div>
+          <div class="action-tile-label">Favorites</div>
+          <div class="action-tile-sub">View saved recipes</div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="{% static 'js/shared.js' %}"></script>
+  <script src="{% static 'js/admin.js' %}"></script>
+  <script src="{% static 'js/glitter.js' %}"></script>
+</body>
+</html>
