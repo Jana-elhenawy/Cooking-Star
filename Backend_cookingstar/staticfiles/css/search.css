@@ -1,0 +1,78 @@
+/* ── Shared action button styles ── */
+    .btn-view, .btn-fav {
+      font-family: 'Fredoka One', sans-serif;
+      font-size: 0.85rem;
+      padding: 8px 20px;
+      border-radius: var(--border-pill);
+      text-decoration: none;
+      transition: all 0.22s ease;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .btn-view {
+      background: linear-gradient(135deg, var(--pink-hot), var(--pink-deep));
+      color: #fff;
+      box-shadow: 0 4px 14px rgba(232,35,95,0.35);
+    }
+    .btn-view:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(232,35,95,0.48);
+    }
+    .btn-fav {
+      background: rgba(255,240,246,0.9);
+      color: var(--pink-deep);
+      border: 2px solid var(--pink-medium);
+    }
+    .btn-fav:hover {
+      background: linear-gradient(135deg, var(--pink-medium), var(--pink-accent));
+      color: #fff;
+      border-color: transparent;
+      transform: translateY(-2px);
+    }
+    .btn-fav.favorited {
+      background: linear-gradient(135deg, var(--pink-hot), var(--pink-deep));
+      color: #fff;
+      border-color: transparent;
+    }
+
+    /* ── Course badges ── */
+    .course-badge {
+      font-family: 'Fredoka One', sans-serif;
+      font-size: 0.75rem;
+      padding: 3px 12px;
+      border-radius: var(--border-pill);
+    }
+    .badge-main       { background: rgba(194,51,122,0.12); color: var(--pink-deep); }
+    .badge-appetizer  { background: rgba(255,179,71,0.18); color: #a05a00; }
+    .badge-dessert    { background: rgba(90,191,78,0.15);  color: #2d7a22; }
+
+    /* ── Toast ── */
+    #toast {
+      position: fixed;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: linear-gradient(135deg, var(--pink-hot), var(--pink-deep));
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: var(--border-pill);
+      font-family: 'Fredoka One', sans-serif;
+      font-size: 0.97rem;
+      box-shadow: 0 8px 28px rgba(232,35,95,0.4);
+      z-index: 9999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      white-space: nowrap;
+    }
+    #toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    @media (max-width: 600px) {
+      .result-card { grid-template-columns: 1fr; }
+      .result-card img { width: 100%; height: 180px; min-height: unset; }
+    }
