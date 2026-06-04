@@ -72,6 +72,37 @@ Cooking Star is a modern recipe-sharing and meal discovery platform that helps u
 - Flask Authentication System
 - Session Management
 
+
 ---
 
-## 📂 Project Structure
+## 🍽️ Core Functionalities
+
+### Recipe Browsing
+Users can explore available recipes and view complete cooking instructions.
+
+### Search System
+Recipes can be searched dynamically using keywords and categories.
+
+### User Profiles
+Users can create accounts and manage their personal information.
+
+### Favorites
+Users can save recipes for future access.
+
+### Admin Panel
+Administrators can manage recipes and categories through a dedicated dashboard.
+
+---
+
+## ⚙️ Installation
+
+### Prerequisites
+
+- Python 3.10+
+- pip
+- Git
+
+### Clone Repository
+
+```bash
+git clone https://github.com/Jana-elhenawy/Cooking-Star.git
